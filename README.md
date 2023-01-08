@@ -36,40 +36,26 @@ Add CustToastModule to imports in module.ts
 Add tag <lib-cust-toast [toast]="toast"></lib-cust-toast>
 Provide the value of toast.
 
-## Properties of Toast 
+# Properties of Toast 
 ## Properties | Type | Value
---------------------------------
-message | string | "Hi Team!"
---------------------------------
-toastPosition | string | top-right | top-left | top-full-width |
-bot-right | bot-left | bot-full-width | bot-center| top-center
----------------------------------------------------------------------------------------------
-showProgressBar | boolean | true | false
----------------------------------------------------------------------------------------------
-toastType | string | Success | Info | Warning | Error
----------------------------------------------------------------------------------------------
+
+| VARIABLE       |      TYPE         |      VALUE
+| :-------:      |   :-------:       |  :-------:
+message             string             "Hi Team!"
+toastPosition       string        "top-right" | "top-left" | "top-full-width" | "bot-right" | "bot-left" | "bot-full-width" | "bot-center"| "top-center"
+showProgressBar     boolean           true | false
+toastType           string         "Success" | "Info" | "Warning" | "Error"
 toastColor | string | "#ffffff"
----------------------------------------------------------------------------------------------
 textColor | string | "#ffffff"
----------------------------------------------------------------------------------------------
 iconColor | string | "#ffffff"
----------------------------------------------------------------------------------------------
 iconBackgroundColor | string | "#ffffff"
----------------------------------------------------------------------------------------------
 titleColor | string | "#ffffff"
----------------------------------------------------------------------------------------------
 progressBarColor | string | "#ffffff"
----------------------------------------------------------------------------------------------
 tapToDissmiss | boolean | true | false
----------------------------------------------------------------------------------------------
 closeButton | boolean | true | false
----------------------------------------------------------------------------------------------
 timeout(in ms) | number | 5000
----------------------------------------------------------------------------------------------
 disableTimeout | boolean | true | false
----------------------------------------------------------------------------------------------
 iconClass | string | "bi bi-check-lg"
----------------------------------------------------------------------------------------------
  
  
 ## Example 
@@ -91,5 +77,5 @@ this.toast= {
       iconClass:"bi bi-check-lg"
     }
     
-##CSS
+## CSS
 In body set overflow as hidden.
