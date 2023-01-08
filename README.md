@@ -52,7 +52,7 @@ Provide the value of toast.
 | titleColor | string | "#ffffff" |
 | progressBarColor | string | "#ffffff" |
 | tapToDissmiss | boolean | true or false |
-| closeButton | boolean | true  false |
+| closeButton | boolean | true or false |
 | timeout(in ms) | number | 5000 |
 | disableTimeout | boolean | true or false |
 | iconClass | string | "bi bi-check-lg" |
