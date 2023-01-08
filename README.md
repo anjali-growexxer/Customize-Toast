@@ -59,22 +59,22 @@ Provide the value of toast.
  
  
 ## Example 
-this.toast= {
-      message: "Hi, Team!",
-      toastPosition:"top-right",
-      showProgressBar:true,
-      toastType:"Success",
-      toastColor:"#E9EDF6",
-      textColor:"grey",
-      tapToDissmiss:true,
-      closeButton:true,
-      timeout:5000,
-      disableTimeout:false,
-      iconBackgroundColor:"blue",
-      iconColor:"#ffffff",
-      titleColor:"blue",
-      progressBarColor:"blue",
-      iconClass:"bi bi-check-lg"
+this.toast= {<br />
+      message: "Hi, Team!",<br />
+      toastPosition:"top-right",<br />
+      showProgressBar:true,<br />
+      toastType:"Success",<br />
+      toastColor:"#E9EDF6",<br />
+      textColor:"grey",<br />
+      tapToDissmiss:true,<br />
+      closeButton:true,<br />
+      timeout:5000,<br />
+      disableTimeout:false,<br />
+      iconBackgroundColor:"blue",<br />
+      iconColor:"#ffffff",<br />
+      titleColor:"blue",<br />
+      progressBarColor:"blue",<br />
+      iconClass:"bi bi-check-lg"<br />
     }
     
 ## CSS
