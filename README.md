@@ -31,7 +31,7 @@ npm i gx-cust-toast
 
 ## Use 
 import { CustToastModule } from 'gx-cust-toast'.
-Add CustToastModule to imports in module.ts
+Add CustToastModule to imports in module.ts.
 
 Add tag <lib-cust-toast [toast]="toast"></lib-cust-toast>
 Provide the value of toast.
