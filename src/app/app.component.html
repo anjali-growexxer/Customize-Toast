@@ -1,0 +1,105 @@
+<app-toast [toast]="toast">
+</app-toast>
+<div style="padding:2rem;" class="main-div">
+    <form [formGroup]="toastform" (ngSubmit)="onSubmit()">
+        <div style="display:flex; justify-content: space-around;" class="form-group">
+            <div class="container">
+                <div class="row">
+                    <div style="padding:0;width:27rem;padding-right: 60px;" class="col">
+                        <div class="mb-2">
+                            <h5>Message</h5>
+                            <textarea formControlName="message" type="text" class="form-control"></textarea>
+                        </div>
+                        <div class="mb-4" style="margin-top:10px ;">
+                            <div class="mb-2 " style="display:flex; margin-right: 4px;">
+                                <input style="margin-right:4px ;" formControlName="toastColor" name="toastColor" type="color">
+                                <label style="display:flex">Toast Color</label>
+                            </div>
+                            <div class="mb-2" style="display:flex ; margin-right: 4px;">
+                                <input style="margin-right:4px ;" formControlName="textColor" name="textColor" type="color">
+                                <label style="display:flex">Text Color</label>
+                            </div>
+                            <div class="mb-2" style="display:flex ; margin-right: 4px;">
+                                <input style="margin-right:4px ;" formControlName="iconColor" name="iconColor" type="color">
+                                <label style="display:flex">Icon Color</label>
+                            </div>
+                            <div class="mb-2" style="display:flex ; margin-right: 4px;">
+                                <input style="margin-right:4px ;" formControlName="iconBackgroundColor" name="iconBackgroundColor" type="color">
+                                <label style="display:flex">Icon Background Color</label>
+                            </div>
+                            <div class="mb-2" style="display:flex ; margin-right: 4px;">
+                                <input style="margin-right:4px ;" formControlName="progressBarColor" name="progressBarColor" type="color">
+                                <label style="display:flex">Progress Bar Color</label>
+                            </div>
+                            <div class="mb-2" style="display:flex ; margin-right: 4px;">
+                                <input style="margin-right:4px ;" formControlName="titleColor" name="titleColor" type="color">
+                                <label style="display:flex">Title Color</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="mb-4">
+                            <h5>Timeout</h5>
+                            <input formControlName="timeout" type="text" class="form-control">
+                        </div>
+                        <div class="mb-4">
+                            <h5>Icon Class</h5>
+                            <input formControlName="iconClass" type="text" class="form-control">
+                        </div>
+                        <!-- <div class="mb-4">
+                            <h5>Disable Timeout</h5>
+                            <div style="display:flex;" *ngFor="let option of disableTimeout">
+                                <input formControlName="disableTimeout" type="radio" name="disableTimeout" value="{{option.key}}">{{option.value}}
+                            </div>
+                        </div> -->
+                        <div class="mb-4">
+                            <input formControlName="disableTimeout" name="disableTimeout" id="disableTimeout" class="form-check-input" type="checkbox" value="P">
+                            <label for="P" class="form-check-label">
+                      Disable Timeout
+                  </label>
+                        </div>
+                        <div class="mb-1">
+                            <input formControlName="tapToDissmiss" name="tapToDissmiss" id="tapToDissmiss" class="form-check-input" type="checkbox" value="R">
+                            <label for="R" class="form-check-label">
+                          Tap To Dissmiss
+                      </label>
+                        </div>
+                        <div class="mb-1">
+                            <input formControlName="closeButton" name="closeButton" id="closeButton" class="form-check-input" type="checkbox" value="R">
+                            <label for="R" class="form-check-label">
+                        Close Button
+                    </label>
+                        </div>
+                        <div class="mb-1">
+                            <input formControlName="showProgressBar" name="showProgressBar" id="showProgressBar" class="form-check-input" type="checkbox" value="R">
+                            <label for="R" class="form-check-label">
+                      Progress Bar
+                  </label>
+                        </div>
+                    </div>
+
+                    <div style="padding:0;padding-left: 80px;" class="col">
+                        <div class="mb-4">
+                            <h5>Toast Type</h5>
+                            <label style="display:flex;" *ngFor="let option of toastType">
+                  <input formControlName="toastType" type="radio" name="toastType" value="{{option.key}}">{{option.value}}
+                </label>
+                        </div>
+
+                        <div class="mb-4">
+                            <h5>Toast Position</h5>
+                            <label style="display:flex;" *ngFor="let option of toastPosition">
+                  <input formControlName="toastPosition" type="radio" name="toastPosition" value="{{option.key}}">{{option.value}}
+                </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <div style="display:flex; justify-content:center; align-items:center;" class="container-fluid">
+        <button type="button" (click)="onSubmit()" class="btn btn-outline-primary mx-3">Open Toast</button>
+        <!-- <button type="button" (click)="onClose()" class="btn btn-outline-success mx-3">Close Toast</button> -->
+    </div>
+</div>
